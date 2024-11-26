@@ -1,7 +1,63 @@
 body {
+    height: 100vh;
     background-color: #111729;
     background-image: url('./src/images/bg-illustration.svg');
     background-position-x: right;
     background-position-y: top;
     background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
 }
+img {
+   height: 40px; 
+}
+.main-page-qr-code{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+}
+.input-container{
+    width: 50%;
+    border-radius: 20px;
+    padding: 5px;
+    z-index: 1;
+    border: 3px solid transparent;
+    box-sizing: border-box; 
+    transition: 0.3s ease;
+}
+.input-container:hover{
+    border: 3px solid #3662E3;
+}
+#form-qr{
+    display: grid;
+    grid-template-areas: 
+    "url-input url-input url-input qr-button";
+    grid-gap: 20px;
+}
+
+ #url-input{
+    grid-area: url-input;
+    background: none;
+    border-radius: 20px;
+    border: none;
+    height: 50px;
+    margin: 2px;
+    color: #F2F5F9;
+    outline: none;
+ }
+
+ #generate-qr{
+    grid-area: qr-button;
+    border-radius: 15px;
+    background-color: #3662E3;
+    border: none;
+    color: #F2F5F9;
+ }
+ #generate-qr:hover{
+    cursor: pointer;
+ }
