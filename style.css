@@ -1,0 +1,7 @@
+body {
+    background-color: #111729;
+    background-image: url('./src/images/bg-illustration.svg');
+    background-position-x: right;
+    background-position-y: top;
+    background-repeat: no-repeat;
+}
