@@ -61,3 +61,6 @@ img {
  #generate-qr:hover{
     cursor: pointer;
  }
+ .qr{
+    height: 100px;
+ }
