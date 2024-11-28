@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./qrCodeFormStyle.css">
     <script defer type="module" src="./generateQrCode.js"></script>
     </script>
     <title>QR CODE</title>
 </head>
 <body>
     <div class="main-page-qr-code">
-        <img src="./src/images/logo-qr-generator.svg" alt="qr-code-image">
+        <img id="img-form" src="./src/images/logo-qr-generator.svg" alt="qr-code-image">
         <div class="input-container">
             <form action="Submit" id="form-qr">
                 <input type="text" alt="url-input" placeholder="Enter an url" id="url-input" name="url-input">

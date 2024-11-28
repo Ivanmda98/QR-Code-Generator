@@ -1,0 +1,64 @@
+body {
+    height: 100vh;
+    background-color: #111729;
+    background-image: url('./src/images/bg-illustration.svg');
+    background-position-x: right;
+    background-position-y: top;
+    background-repeat: no-repeat;
+}
+.main-container {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "qr-code-containner";
+    gap: 20px;
+    height: 100%;
+
+}
+
+.header {
+   grid-area: header;
+   padding: 40px 0 0 40px;
+}
+.qr-code-containner {
+    display: grid;
+    grid-area: qr-code-containner;
+    align-content: center;
+    justify-content: center;
+    gap: 20px;
+}
+.qr-code {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: #364153;
+    border-radius: 50%;
+    
+}
+#qr-code-image {
+    margin: 30px;
+}
+
+#qr-code-image img { 
+    padding: 20px;  
+    background-color: #F2F5F9;
+    border-radius: 20px;
+}
+
+.qr-code-options {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    
+}
+
+.option {
+    height: 50px;
+    width: 200px;
+    background-color: #3662E3;
+    border-radius: 10px;
+    border: transparent;
+    color: #F2F5F9;
+}

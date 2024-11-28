@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./qrCodeStyle.css">
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.js"></script>
     <script defer type="module" src="./qrCode.js"></script>
     <title>QR CODE DETAILS</title>
 </head>
 <body>
-    <div>
+    <div class="main-container">
         <div class="header">
             <img src="./src/images/logo-qr-generator.svg" alt="">
         </div>
@@ -17,9 +18,9 @@
                 <div id="qr-code-image"></div>
             </div>
         </div>
-        <div class="qe-code-options">
-            <input type="submit" name="download-option" id="download" value="Download">
-            <input type="submit" name="share-optionn" id="share" value="Share">
+        <div class="qr-code-options">
+            <input type="submit" name="download-option" class="option" id="download" value="Download">
+            <input type="submit" name="share-optionn" class="option" id="share" value="Share">
         </div>
     </div>
 </body>
