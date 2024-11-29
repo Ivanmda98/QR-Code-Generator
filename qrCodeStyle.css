@@ -1,5 +1,6 @@
 body {
     height: 100vh;
+    width: 100vw;
     background-color: #111729;
     background-image: url('./src/images/bg-illustration.svg');
     background-position-x: right;
@@ -61,4 +62,25 @@ body {
     border-radius: 10px;
     border: transparent;
     color: #F2F5F9;
+}
+
+@media (max-width: 600px) {
+    .main-container{
+        height: 80%;
+    }
+    .qr-code img {
+        width: 220px;
+        height: 220px;
+    }
+    
+    .qr-code-options {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        align-items: center;
+        margin: 0;
+        gap: 5px;
+        justify-content: start;
+    }
+
 }
